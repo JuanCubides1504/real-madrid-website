@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - Inicio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        header {
+            background-color: #122053;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #inicio {
+            background: url('_img/santiago-bernabeu.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        #inicio h1, #inicio p, #inicio a {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        #inicio h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        #inicio p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        #inicio a {
+            background-color: #ffffff;
+            color: #122053;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        #noticias {
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+        }
+
+        #noticias h2 {
+            text-align: center;
+            color: #122053;
+        }
+
+        #noticias article {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #122053;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../_img/RealMadrid.png" alt="Logo Real Madrid">
+        <nav>
+            <ul>
+                <li><a href="../_html/inicio.html">Inicio</a></li>
+                <li><a href="../_html/historia.html">Historia</a></li>
+                <li><a href="../_html/plantilla.html">Plantilla</a></li>
+                <li><a href="../_html/trofeos.html">Trofeos</a></li>
+                <li><a href="../_html/estadio.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1 style="background-color: #122053;">Bienvenido al Real Madrid</h1>
+        <p style="background-color: #122053;">El club más grande del mundo, donde nacen las leyendas.</p>
+    </section>
+
+    <section id="noticias">
+        <h2>Últimas Noticias</h2>
+        <article>
+            <h3>¡Campeones de Europa 2025!</h3>
+            <p>Real Madrid se consagra campeón de la UEFA Champions League por decimoquinta vez en su historia tras vencer al Manchester City en la final.</p>
+        </article>
+        <article>
+            <h3>Nueva era en el Bernabéu</h3>
+            <p>El nuevo estadio Santiago Bernabéu ya está en funcionamiento con tecnología de última generación y una experiencia única para los aficionados.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Real Madrid C.F. - Todos los derechos reservados</p>
+        <p>Síguenos en:
+            <a href="https://www.facebook.com/realmadrid" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/realmadrid" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/realmadrid" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
